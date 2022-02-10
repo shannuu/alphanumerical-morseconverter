@@ -344,3 +344,7 @@ esac
 }
 
 banner
+while [[ true ]]; do
+sleep 3
+banner
+done
