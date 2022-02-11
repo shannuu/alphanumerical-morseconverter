@@ -31,9 +31,9 @@ echo
 read -p $"Your repo is already the latest version, Do you still want to update [y/n]:- " option
 if [[ $option == "y" ]] || [[ $option == "Y" ]]; then
 repnamer
-fi
 else
 repnamer
+fi
 fi
 rm version.txt
 }
