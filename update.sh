@@ -13,9 +13,29 @@ exit
 fi
 ((var++))
 done
-}
-repnamer
 rm -rf $rep > /dev/null 2>&1
 pkg install git -y > /dev/null 2>&1
 git clone https://github.com/Shannuu/AlphaNumerical-MorseConverter > /dev/null 2>&1
 echo "Done"
+}
+
+
+
+versionchecker(){
+cversion="0.0.0.1"
+cd ..
+wget https://github.com/shannuu/AlphaNumerical-MorseConverter/blob/main/version/version.txt
+version=$(sed -n 1411p version.txt | cut -c 71-77)
+if [[ $version == $cversion ]];then
+echo
+read -p $"Your repo is already the latest version, Do you still want to update [y/n]:- " option
+if [[ $option == "y" ]] || [[ $option == "Y" ]]; then
+repnamer
+fi
+else
+repnamer
+fi
+rm version.txt
+}
+
+versionchecker
