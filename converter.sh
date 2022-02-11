@@ -179,10 +179,10 @@ echo "$le has no morse code"
 fi
 
 morse+=" "
-(( var++ ))
+((var++))
 done
 echo
-echo Morse Code=  $morse
+echo Morse Code =  $morse
 }
 
 morsetoalpha(){
@@ -195,57 +195,57 @@ word=""
 until [[ $var -eq $chars ]]
 do
 le=$(echo "${code}" | cut -d " " -f $var)
-if [[ $le == '.-' ]] || [[ $le == 'A' ]]; then
+if [[ $le == '.-' ]]; then
 word+="a"
-elif [[ $le == '-...' ]] || [[ $le == 'B' ]]; then
+elif [[ $le == '-...' ]]; then
 word+="b"
-elif [[ $le == '-.-.' ]] || [[ $le == 'C' ]]; then
+elif [[ $le == '-.-.' ]]; then
 word+="c"
-elif [[ $le == '-..' ]] || [[ $le == 'D' ]]; then
+elif [[ $le == '-..' ]]; then
 word+="d"
-elif [[ $le == '.' ]] || [[ $le == 'E' ]]; then
+elif [[ $le == '.' ]]; then
 word+="e"
-elif [[ $le == '..-.' ]] || [[ $le == 'F' ]]; then
+elif [[ $le == '..-.' ]]; then
 word+="f"
-elif [[ $le == '--.' ]] || [[ $le == 'G' ]]; then
+elif [[ $le == '--.' ]]; then
 word+="g"
-elif [[ $le == '....' ]] || [[ $le == 'H' ]]; then
+elif [[ $le == '....' ]]; then
 word+="h"
-elif [[ $le == '..' ]] || [[ $le == 'I' ]]; then
+elif [[ $le == '..' ]]; then
 word+="i"
-elif [[ $le == '.---' ]] || [[ $le == 'J' ]]; then
+elif [[ $le == '.---' ]]; then
 word+="j"
-elif [[ $le == '-.-' ]] || [[ $le == 'K' ]]; then
+elif [[ $le == '-.-' ]]; then
 word+="k"
-elif [[ $le == '.-..' ]] || [[ $le == 'L' ]]; then
+elif [[ $le == '.-..' ]]; then
 word+="l"
-elif [[ $le == '--' ]] || [[ $le == 'M' ]]; then
+elif [[ $le == '--' ]]; then
 word+="m"
-elif [[ $le == '-.' ]] || [[ $le == 'N' ]]; then
+elif [[ $le == '-.' ]]; then
 word+="n"
-elif [[ $le == '---' ]] || [[ $le == 'O' ]]; then
+elif [[ $le == '---' ]]; then
 word+="o"
-elif [[ $le == '.--.' ]] || [[ $le == 'P' ]]; then
+elif [[ $le == '.--.' ]]; then
 word+="p"
-elif [[ $le == '--.-' ]] || [[ $le == 'Q' ]]; then
+elif [[ $le == '--.-' ]]; then
 word+="q"
-elif [[ $le == '.-.' ]] || [[ $le == 'R' ]]; then
+elif [[ $le == '.-.' ]]; then
 word+="r"
-elif [[ $le == '...' ]] || [[ $le == 'S' ]]; then
+elif [[ $le == '...' ]]; then
 word+="s"
-elif [[ $le == '-' ]] || [[ $le == 'T' ]]; then
+elif [[ $le == '-' ]]; then
 word+="t"
-elif [[ $le == '..-' ]] || [[ $le == 'U' ]]; then
+elif [[ $le == '..-' ]]; then
 word+="u"
-elif [[ $le == '...-' ]] || [[ $le == 'V' ]]; then
+elif [[ $le == '...-' ]]; then
 word+="v"
-elif [[ $le == '.--' ]] || [[ $le == 'W' ]]; then
+elif [[ $le == '.--' ]]; then
 word+="w"
-elif [[ $le == '-..-' ]] || [[ $le == 'X' ]]; then
+elif [[ $le == '-..-' ]]; then
 word+="x"
-elif [[ $le == '-.--' ]] || [[ $le == 'Y' ]]; then
+elif [[ $le == '-.--' ]]; then
 word+="y"
-elif [[ $le == '--..' ]] || [[ $le == 'Z' ]]; then
+elif [[ $le == '--..' ]]; then
 word+="z"
 elif [[ $le == '.----' ]]; then
 word+="1"
@@ -310,10 +310,10 @@ echo "$le has no morse code"
 fi
 
 morse+=" "
-(( var++ ))
+((var++))
 done
 echo
-echo The Sentence=  $word
+echo The Sentence =  $word
 }
 
 
