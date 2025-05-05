@@ -186,6 +186,7 @@ echo Morse Code =  $morse
 }
 
 morsetoalpha(){
+read -p $"Enter the delimiter:- " delim
 read -p $"Enter the morse code to be converted:- " code
 
 var=1
@@ -303,7 +304,7 @@ elif [[ $le == '.-..-.' ]]; then
 word+='"'
 elif [[ $le == "...-..-" ]]; then
 word+="$"
-elif [[ $le == "#" ]]; then
+elif [[ $le == $delim ]]; then
 word+=" "
 else
 echo "$le has no morse code"
